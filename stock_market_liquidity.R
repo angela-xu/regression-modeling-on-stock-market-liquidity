@@ -19,8 +19,8 @@ library(abind)
 ####Model 1####
     model1=lm(VOLUME~NTRAN)
     summary(model1)
-    plot(model1$residuals,xlab = '')####In this figure, the residuals are plotted against the observation
-    plot(NTRAN,model1$residuals)####Here I made a second plot that may have different implications. This plot and the plot above should give us same judgement when used to see whether variances of the residuals are equal.
+    plot(model1$residuals,xlab = '')    ####In this figure, the residuals are plotted against the observation
+    plot(NTRAN,model1$residuals)    ####Here I made a second plot that may have different implications. This plot and the plot above should give us same judgement when used to see whether variances of the residuals are equal.
     qqnorm(model1$residuals, main ='Normal Q Q Plot(Model1)')
     
     ####histogram of model1####
